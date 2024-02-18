@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>send_html</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <center>
+        <h1>This is the Html page rendering by Flask by {{name}}</h1>
+        <img src="{{url_for('static',filename='images/@arijitswain.png')}}" alt=""><br>
+        <h2><a href="{{ url_for('send_properties') }}">Go Back to Property Page</a></h2><br>
+    </center>
+</body>
+</html>
